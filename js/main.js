@@ -17,6 +17,7 @@ function hidePageComponents() {
   const components = [
     $loginForm,
     $signupForm,
+    $submitStory,
     $allStoriesList,
     $favoriteStories,
     $myStories

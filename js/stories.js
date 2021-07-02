@@ -67,6 +67,7 @@ async function submitNewStory(e) {
   const title = $('#newTitle').val()
   const author = $('#newAuthor').val()
   const url = $('#newUrl').val()
+  $submitStory.trigger('reset')
   const username = currentUser.username
   const storyData = {title, author, url, username}
 
@@ -76,7 +77,6 @@ async function submitNewStory(e) {
   $allStoriesList.prepend($storyHTML)
 
   $submitStory.toggleClass('hidden')
-  $submitStory.trigger('reset')
 }
 
 $submitStory.on('submit', submitNewStory)

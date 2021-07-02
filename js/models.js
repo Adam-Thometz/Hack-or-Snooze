@@ -13,10 +13,8 @@ class Story {
   }
 
   getHostName() {
-    if (this.url.slice(0, 7) === 'https://') {
-      return this.url.slice(8)
-    }
-    return this.url.slice(7)
+    const url = new URL(this.url);
+    return url.hostname
   }
 }
 

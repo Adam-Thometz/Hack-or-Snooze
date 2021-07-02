@@ -46,7 +46,7 @@ function navAllStories() {
 }
 
 function navSubmitStory() {
-  $submitStory.toggleClass('hidden')
+  $submitStory.show()
 }
 
 $navSubmit.on('click', navSubmitStory)
