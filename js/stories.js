@@ -76,7 +76,7 @@ async function submitNewStory(e) {
   const $storyHTML = generateStoryMarkup(story)
   $allStoriesList.prepend($storyHTML)
 
-  $submitStory.toggleClass('hidden')
+  $submitStory.hide()
 }
 
 $submitStory.on('submit', submitNewStory)
